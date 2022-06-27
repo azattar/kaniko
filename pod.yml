@@ -7,7 +7,7 @@ spec:
   - name: kaniko
     image: gcr.io/kaniko-project/executor:latest
     args: ["--context=git://github.com/azattar/k8s_jupyterlab.git",
-            "--dockerfile=Dockerfile",
+            "--dockerfile=/Dockerfile",
             "--destination=dop_v1_686b8b7b08fe9741781e99e7b2465f28e3184299f04be814566b95079ba17bea/registry.digitalocean.com/k8s-01-registry"] # replace with your dockerhub account
 #    args: ["--dockerfile=/workspace/dockerfile",
 #            "--context=dir://workspace",
