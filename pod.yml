@@ -19,7 +19,8 @@ spec:
         mountPath: /workspace
   restartPolicy: Never
   volumes:
-    - name: kaniko-secret
+    #- name: kaniko-secret
+    - name: docker-registry
       secret:
         secretName: regcred
         items:
